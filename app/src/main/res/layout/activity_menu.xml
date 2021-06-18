@@ -21,7 +21,7 @@
         android:id="@+id/btnBreweries"
         android:layout_width="300dp"
         android:layout_height="70dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="#41454E"
         android:text="BREWERY LIST"
         android:textSize="24sp"
@@ -33,10 +33,10 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="300dp"
-        android:layout_height="38dp"
+        android:layout_height="40dp"
         android:layout_marginTop="40dp"
         android:gravity="center"
-        android:text="Search breweries"
+        android:text="Search breweries for ID"
         android:textColor="#ffffff"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -46,7 +46,7 @@
         app:layout_constraintTop_toBottomOf="@+id/btnBreweries" />
 
     <Button
-        android:id="@+id/btnSearch"
+        android:id="@+id/btnSearchId"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -69,4 +69,44 @@
         android:textColorHint="#ffffff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Search by keyword"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtIdRes" />
+
+    <EditText
+        android:id="@+id/txtKeyword"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Keyword"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btnSearchKeyword"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#41454E"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
